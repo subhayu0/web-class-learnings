@@ -1,0 +1,39 @@
+
+.box1{
+    background-color: black;
+    text-decoration: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+.box2 {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.free-button{
+    background: linear-gradient(to right, color=lightseagreen);
+    padding: 12px 25px;
+    border-radius: 40px;
+    font-weight: bold;
+}
+.box3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 80px;
+    position: relative;
+    background: #f7f9f9;
+  }
+
+.buttons{
+    background: radial-gradient(to left, color=Purple);
+    border-radius: 50px
+}

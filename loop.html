@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Loops Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      h2 {
+        color: #007bff;
+      }
+      pre {
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Loops Demo</h1>
+
+    <div id="output"></div>
+
+    <script>
+      const output = document.getElementById("output");
+
+      function print(title, content) {
+        const section = document.createElement("div");
+        section.innerHTML = `<h2>${title}</h2><pre>${content}</pre>`;
+        output.appendChild(section);
+      }
+
+      // 1. for loop
+      let text1 = "";
+      for (let i = 1; i <= 10; i++) {
+        text1 += `Count: ${i}\n`;
+      }
+      print("1. For Loop", text1);
+
+      // 2. while loop
+      let j = 1;
+      let text2 = "";
+      while (j <= 2) {
+        text2 += `Count: ${j}\n`;
+        j++;
+      }
+      print("2. While Loop", text2);
+
+      // 3. do...while loop
+      let k = 1;
+      let text3 = "";
+      do {
+        text3 += `Count: ${k}\n`;
+        k++;
+      } while (k <= 5);
+      print("3. Do...While Loop", text3);
+
+      // 4. for...of loop
+      const fruits = ["apple", "banana", "cherry"];
+      let text4 = "";
+      for (const fruit of fruits) {
+        text4 += `Fruit: ${fruit}\n`;
+      }
+      print("4. For...of Loop", text4);
+
+      // 5. for...in loop
+      const person = { name: "John", age: 30, city: "Kathmandu" };
+      let text5 = "";
+      for (const key in person) {
+        text5 += `${key}: ${person[key]}\n`;
+      }
+      print("5. For...in Loop", text5);
+
+      // 6. forEach loop
+      const numbers = [10, 20, 30];
+      let text6 = "";
+      numbers.forEach((num, index) => {
+        text6 += `Index ${index}: ${num}\n`;
+      });
+      print("6. Array.forEach()", text6);
+
+      const details=[
+        {name:"Mohan"}
+      ]
+
+
+    </script>
+  </body>
+</html>

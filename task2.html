@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We are Doing an assignment</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<style>
+  /* Tag selector */
+p {
+  color: blue;
+}
+ 
+h1 {
+  font-size: 24px;
+}
+ 
+table {
+  border: 1px solid black;
+}
+ 
+/* ID selector */
+#header {
+  background-color: lightgray;
+  padding: 10px;
+}
+ 
+/* Class selector */
+.navbar {
+  background-color: navy;
+  color: white;
+  padding: 10px;
+}
+ 
+/* Universal selector */
+* {
+  font-family: Arial, sans-serif;
+}
+ 
+/* Grouping selector */
+#header,
+h1,
+p {
+  margin: 10px;
+}
+ 
+/* Pseudo-element selectors */
+h1::first-letter {
+  font-size: 200%;
+  color: red;
+}
+ 
+p::first-line {
+  font-weight: bold;
+}
+ 
+h2::before {
+  content: "📌 ";
+}
+ 
+h3::after {
+  content: " ✅";
+}
+ 
+::selection {
+  background-color: rgb(158, 16, 201);
+  color: black;
+}
+ 
+/* Pseudo-class selectors */
+a:link {
+  color: green;
+}
+ 
+a:visited {
+  color: purple;
+}
+ 
+a:hover {
+  color: red;
+}
+ 
+a:active {
+  font-weight: bold;
+}
+ 
+li:first-child {
+  text-decoration: underline;
+}
+ 
+li:last-child {
+  color: orange;
+}
+ 
+li:nth-child(2) {
+  color: darkgreen;
+}
+ 
+/* Combinators */
+#header h1 {
+  color: darkblue;
+}
+ 
+div > p {
+  border: 1px dashed black;
+}
+ 
+div + p {
+  background-color: lightyellow;
+}
+ 
+div ~ p {
+  font-style: italic;
+}
+ 
+/* Attribute selectors */
+a[target] {
+  background-color: rgb(0, 0, 0);
+}
+ 
+input[type="text"] {
+  border: 2px solid gray;
+}
+
+</style>
+<body>
+    <div id="Heading">
+        <h1><u>"Hello Everyone"</u></h1>
+    </div class="nav bar"> Main navigation
+    </div>
+    
+    <h2>We are making :: before  a sample of Web development </h2>
+    <h3>We are using :: after to enhance our skill</h3>
+
+    <p>
+        Hello Everyone. I am a student of Softwarica college of IT and E-commerce. <i>We are learing about web development in our 2<sup>nd</sup> year 3<sup>rd</sup> semester</i>
+    </p>
+
+    <div>
+        <p>Our module lecturer <b>Rohit Shrestha</b> is an outstanding lecturer helping us with our module enchancing our skill.</p>
+    </div>
+
+    <p>Nepal is a landlocked country. Nepal is very beautiful. It lies between China and India. Nepal has 8 of the 10 highest peak in the world. Mt.Everest lies in Nepal.</p>
+
+    <ul>
+        <li>Number 1: Mt.Everest</li>
+        <li>Number 2: Mt.K2</li>
+        <li>Number 3: Mt.Kanchanjunga</li>
+      </ul>
+
+      <br /><br />
+      <input type="Name" placeholder="Enter Your Fullname" />
+      <input type="password" placeholder="Password input" />
+   
+      <table>
+        <tr>
+          <td>Sentence One</td>
+        </tr>
+        <tr>
+          <td>Paragraph Two</td>
+        </tr>
+      </table>
+    </body>
+  </html>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            border: 1px solid black;
+            height: 200px;
+            width: 100%;
+            align-items: center;
+            justify-content:space-around;
+            flex-direction: column-reverse;
+            gap:10px;
+            flex-wrap: wrap-reverse;
+            flex-flow: row;
+            border-radius: 10px;
+
+        }
+        .Content1{
+            width: 100px;
+            height: 50px; 
+            border: 2px solid gold;
+            align-items: start;
+            border-radius: 5px;
+            order: 5;
+            flex-grow: 2;
+            background-color: crimson;
+            align-self: self-end;
+            text-align: center;
+            color: white;
+            font-size: 26px;
+        }
+        .Content2{
+            width: 150px;
+            height: 50px;
+            border: 2px groove silver;
+            align-items: baseline;
+            border-radius: 5px;
+            order: 2;
+            background-color: blue;
+            align-self: center;
+            flex-grow: 1;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+        }
+        .Content3{
+            width: 10px;
+             
+            border: 2px dotted brown;
+            align-items: stretch;
+            border-radius: 5px;
+            order: 1;
+            flex-basis: 50px;
+            align-self: stretch;
+            background-color: green;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+        }
+        .Content4{
+            width: 100px;
+            height: 50px; 
+            border: 2px ridge crimson;
+            align-items: baseline;
+            border-radius: 5px;
+            order:3;
+            flex-shrink: 3;
+            align-self: self-start;
+            background-color: purple;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+        }
+        .Content5{
+            width: 100px;
+            height: 50px; 
+            border: 2px solid gold;
+            align-items: self-start;
+            border-radius: 5px;
+            order: 4;
+            flex-grow: 2;
+            background-color: gold;
+            align-self: start;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="Content1">text1  text3 </p>
+        <p class="Content2">text2  text4</p>
+        <p class="Content3">text5  text7</p>
+        <p class="Content4">text6  text8</p>
+        <p class="Content5">text9  text10</p>
+    </div>
+</body>
+</html>

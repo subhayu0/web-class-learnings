@@ -1,0 +1,92 @@
+body{
+    .bigbox{
+        border-width: 5px;
+        background-color: #f5f5f7;
+        background-size: cover;
+        width: 100vw;
+  height: 100vh;
+    }
+
+    .navgbox{
+        border-width:10px;
+        width:1OOvw;
+        height: 7vh;
+        /* background-color:#2c2c2e; */
+        background-color: black;
+    }
+    .imagebox{
+        border-width:10px;
+        width:1OOvw;
+        height: 93vh;
+        background-color: rgb(159, 133, 133);
+
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: white;
+       flex-wrap: wrap;
+
+  
+ 
+  
+
+    }
+    nav ul li{
+        margin-left: 50px;
+        margin: 0 15px;
+        font-size: 14px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }
+
+    nav ul li a{
+       color: white;
+       text-decoration: none;
+
+    }
+    nav ul li a:hover{
+        background-color: #f5f5f7;
+        color:black;
+    }
+
+    .logo{
+        height:20px;
+        width:25px;
+    }
+
+    
+    .image{
+        width:100vw;
+        height: 93vh;
+
+    }
+    .Vision-pro{
+        
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;}
+
+        .welcome{
+            position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;}
+
+}

@@ -1,0 +1,293 @@
+/* .background-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-image: url("https://th.bing.com/th/id/OIP.pRPOnanPwFPxAYcUupX0mQHaEv?w=1400&h=896&rs=1&pid=ImgDetMain");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    margin: 25px 50px;
+    width: auto;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headings a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.logo {
+    font-size: xx-large;
+    font-weight: bold;
+}
+.headings {
+    font-size: x-large;
+    display: flex;
+}
+
+.text1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.text1 h1 {
+    font-size: 60px;
+}
+
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.button1,
+.button2 {
+    padding: 15px 30px;
+    background: transparent;
+    border: 2px dotted silver;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+} */
+
+
+.background-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-image: url("https://th.bing.com/th/id/OIP.pRPOnanPwFPxAYcUupX0mQHaEv?w=1400&h=896&rs=1&pid=ImgDetMain");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    animation: zoomBackground 20s infinite alternate ease-in-out;
+}
+
+@keyframes zoomBackground {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+
+.box {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.header {
+    display: flex;
+    margin: 25px 50px;
+    width: auto;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    animation: fadeInDown 1s ease forwards;
+}
+
+
+.headings a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.headings a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.headings a:hover {
+    color: silver;
+}
+
+.headings a:hover::after {
+    width: 100%;
+}
+
+.logo {
+    font-size: xx-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.headings {
+    font-size: x-large;
+    display: flex;
+}
+
+
+.text1 {
+    position: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    opacity: 0;
+    animation: fadeInUp 2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.text1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.text1:hover h1 {
+    color: gold;
+    text-shadow: 0 0 10px #FFD700;
+    transition: all 0.5s ease;
+}
+.text1:hover h2 {
+    color: blue;
+    text-shadow: 0 0 10px #FFD700;
+    transition: all 0.5s ease;
+}
+
+.text1 h2 {
+    font-size: 25px;
+}
+
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    animation: fadeInUp 2s ease forwards;
+    animation-delay: 1s;
+}
+
+.button1,
+.button2 {
+    padding: 15px 30px;
+    background: transparent;
+    border: 2px dotted silver;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.button1{
+    animation: glow  2s infinite alternate;
+}
+.button2{
+    animation: float 3s ease-in-out infinite;
+}
+
+.button1:hover,
+.button2:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: white;
+    transform: scale(1.1);
+}
+
+
+.button1:active,
+.button2:active {
+    transform: scale(0.9);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: white;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px silver;
+    }
+    100% {
+        box-shadow: 0 0 20px white, 0 0 30px silver;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+  
+@media (max-width: 768px) {
+    .text1 h1 {
+        font-size: 40px;
+    }
+    .text1 h2 {
+        font-size: 20px;
+    }
+    .headings {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./design4.css">
+</head>
+<body>
+    <header id ="topbar">
+        <div class =box1>
+            <p>Connect With Us: </p>
+            <p> Info@example.com | Call Us now: 9867543210</p>
+        </div>
+
+    </header>
+    <header id="navbar">
+        <div class="logo">
+
+        </div>
+        <a href="./from1.html"></a>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Result</a>
+    </header>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="./design4.css" />
+  <style>
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: aqua;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+  
+    }
+
+    body {
+      margin: 0;
+      padding-top: 80px;
+      font-family: Arial, sans-serif;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .text {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    #portfolio {
+      padding: 40px 20px;
+      background-color: #f5f5f5;
+      min-height: 600px;
+      display: none; 
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header id="navbar">
+    <div class="logo">
+      <img src="./Images/Avatar.jpg" alt="logo" />
+    </div>
+    <a href="#">Home</a>
+    <a href="#">About us</a>
+    <a id="result-link">Result</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </header>
+
+
+ 
+  <section id="result">
+    <h2>Result published</h2>
+    <iframe src="from1.html"></iframe>
+  </section>
+
+ 
+  <script>
+    document.getElementById("result-link").addEventListener("click", function () {
+      const section = document.getElementById("result");
+      section.style.display = "block";
+      section.scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

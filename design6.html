@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Build Business</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+.top-bar {
+  background: #111;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.navbar {
+  background-color: #4bb;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.box1 {
+  background: url('./Images/Screenshot\ 2025-04-29\ 081006.png') no-repeat center center/cover;
+  text-align: start;
+  padding: 100px 20px;
+}
+
+.box1 h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.box1 h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.box1 button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #44b9b0;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.card {
+  background: #333;
+  padding: 20px;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: #aaff00;
+  margin-bottom: 10px;
+}
+
+a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    a:hover {
+      color: blue; 
+    }
+
+    .text {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    
+
+    #result {
+      padding: 40px 20px;
+      background-color: #f5f5f5;
+      min-height: 600px;
+      display: none; 
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="left">
+      Connect With Us: fb ig lkdn
+     
+    </div>
+    <div class="right">
+      info@example.com | Call Us Now:1234567890
+    </div>
+  </div>
+
+  <header class="navbar">
+    <div class="logo">COMPANY NAME</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="result-link">Result</a>
+    </nav>
+  </header>
+
+  
+   <section id="result">
+    <h2>Result published</h2>
+    <iframe src="from1.html"></iframe>
+  </section>
+
+  <script>
+    document.getElementById("result-link").addEventListener("click", function () {
+      const section = document.getElementById("result");
+      section.style.display = "block"; 
+      section.scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+
+  <section class="box1">
+    <h2>WE ARE HERE TO</h2>
+    <h1>BUILD BUSINESS</h1>
+    <button>Click Here</button>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <div class="icon">💎</div>
+      <h3>BUSINESS SOLUTION</h3>
+      <p>We find best solution for you</p>
+    </div>
+    <div class="card">
+      <div class="icon">📈</div>
+      <h3>MARKET RESEARCH</h3>
+      <p>MArket RESEARCH is one of the best ability of the company as we acquired 1billion$</p>
+    </div>
+    <div class="card">
+      <div class="icon">💡</div>
+      <h3>BUSINESS STRATEGY</h3>
+      <p>We simply steal money from KP ba Prachanda and Shere kaka which is ourr main STRATEGY</p>
+    </div>
+  </section>
+
+
+</body>
+</html>

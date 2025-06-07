@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Heading</h1>
+        
+    </div>
+    
+    <input type="input" name="input" id="inputValue">
+    
+    <button type="button" class="button">Button</button>
+
+    <div class="Output">
+        <ul id="addvaluelist">  
+        </ul>
+    </div>
+    <script>
+        function addvaluelist(){
+            const input= document.getElementById("inputValue")
+            const value=input.value.trim();
+
+            if(value!==""){
+                const listitem=document.createElement('li');
+                listitem.textContent=value;
+
+                const removeBtn= document.createElement("button");
+                removeBtn.textContent="Remove";
+                removeBtn.style.marginLeft="10px";
+                removeBtn.onClick=function(){
+                    listitem.remove();
+                };
+                listitem.appendChild(removeBtn);
+                document.getElementById("addvaluelist").appendChild(listitem);
+                input.value="";
+            }
+        }
+
+        function sum(){
+            const sum=function(a,b)
+             {return(a+b)}
+             document.getElementById("sum").innerHTML=myFunction(3+2);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grade Calculator</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: greenyellow;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: goldenrod;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid rebeccapurple;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="number"]:focus {
+            border-color: blue;
+            outline: none;
+        }
+
+        button {
+            background-color: #0f1611;
+            color: white;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: navajowhite;
+        }
+
+        #result {
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            min-height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter Marks to Get Grade</h2>
+    
+    <label for="English">English(0-100):</label>
+    <input type="number" id="English" min="0" max="100" />
+
+    <label for="software development">Science (0-100):</label>
+    <input type="number" id="Science" min="0" max="100" />
+
+    <label for="Andriod kotlin">Nepali (0-100):</label>
+    <input type="number" id="Nepali" min="0" max="100" />
+
+    <label for="DSA">Maths(0-100):</label>
+    <input type="number" id="Maths" min="0" max="100" />
+
+    <button onClick="calculateGrade()">Get Grade</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateGrade() {
+            const marks1 = parseInt(document.getElementById("English").value);
+            const marks2 = parseInt(document.getElementById("Science").value);
+            const marks3 = parseInt(document.getElementById("Nepali").value);
+            const marks4 = parseInt(document.getElementById("Maths").value);
+
+            const result = document.getElementById("result");
+
+            if ([marks1, marks2, marks3, marks4].some(mark => isNaN(mark) || mark < 0 || mark > 100)) {
+                result.textContent = "Please enter valid marks between 0 and 100 for all subjects.";
+                result.style.color = "red";
+                return;
+            }
+
+            
+            const average = (marks1 + marks2 + marks3 + marks4) / 4;
+            let grade;
+
+            
+            if (average >= 90) {
+                grade = "A+";
+            } else if (average >= 80) {
+                grade = "A";
+            } else if (average >= 70) {
+                grade = "B";
+            } else if (average >= 60) {
+                grade = "C";
+            } else if (average >= 50) {
+                grade = "D";
+            } else {
+                grade = "F";
+            }
+
+             status = average >= 40 ? "Pass!!" : "Fail!!!";
+             result.style.color = "#333";
+
+            result.style.color = "#333";
+            result.textContent = `Percentage%: ${average.toFixed(2)}, Grade: ${grade} , Status: ${status}` ;
+        }
+    </script>
+</body>
+</html>
+
+

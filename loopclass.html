@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> for of loop  </h2>
+    <script>
+        // for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+
+// }
+
+// //while loop
+// let i = 1;
+// while (i <= 10) {
+//     console.log(i);
+// }
+
+
+// //for....of
+// const fruits = ["apple", "Orange", "Banana", "Grapes"];
+
+
+const details = [
+    { name: `Mohan`, age: 20, gender: `Male` },
+    { name: `Ram`, age: 23, gender: `Male` },
+    { name: `Gita`, age: 24, gender: `Female` },
+    { name: `Hari`, age: 10, gender: `Male` },
+    { name: `Sony`, age: 19, gender: `Female` },
+    { name: `Monoj`, age: 21, gender: `Male` },
+]
+for (const names of details) {
+    console.log(names.name);
+
+}
+    </script>
+</body>
+</html>

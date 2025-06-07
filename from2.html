@@ -1,0 +1,248 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Input Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      padding: 40px;
+    }
+
+    .grade-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .grade-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="grade-form">
+    <h2>Enter Your Grades</h2>
+
+    <div class="form-group">
+      <label for="subject1">Subject 1</label>
+      <select id="subject1" name="subject1">
+        <option value="">--Select Grade--</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="Fail">Fail</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="subject2">Subject 2</label>
+      <select id="subject2" name="subject2">
+        <option value="">--Select Grade--</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="Fail">Fail</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="subject3">Subject 3</label>
+      <select id="subject3" name="subject3">
+        <option value="">--Select Grade--</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="Fail">Fail</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="subject4">Subject 4</label>
+      <select id="subject4" name="subject4">
+        <option value="">--Select Grade--</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="Fail">Fail</option>
+      </select>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Grades</button>
+  </form>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marks and Grades Input</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f5;
+      padding: 40px;
+    }
+
+    .grade-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .grade-form h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background: #2e86de;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background: #216ab8;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="grade-form">
+    <h2>Enter Subject Marks & Grades</h2>
+
+    <!-- Subject 1 -->
+    <div class="form-group">
+      <label for="marks1">Subject 1 Marks</label>
+      <input type="number" id="marks1" name="marks1" min="0" max="100" placeholder="Enter marks (0–100)">
+      <label for="grade1">Grade</label>
+      <select id="grade1" name="grade1">
+        <option value="">--Select Grade--</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>Fail</option>
+      </select>
+    </div>
+
+    <!-- Subject 2 -->
+    <div class="form-group">
+      <label for="marks2">Subject 2 Marks</label>
+      <input type="number" id="marks2" name="marks2" min="0" max="100" placeholder="Enter marks (0–100)">
+      <label for="grade2">Grade</label>
+      <select id="grade2" name="grade2">
+        <option value="">--Select Grade--</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>Fail</option>
+      </select>
+    </div>
+
+    <!-- Subject 3 -->
+    <div class="form-group">
+      <label for="marks3">Subject 3 Marks</label>
+      <input type="number" id="marks3" name="marks3" min="0" max="100" placeholder="Enter marks (0–100)">
+      <label for="grade3">Grade</label>
+      <select id="grade3" name="grade3">
+        <option value="">--Select Grade--</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>Fail</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="marks4">Subject 4 Marks</label>
+      <input type="number" id="marks4" name="marks4" min="0" max="100" placeholder="Enter marks (0–100)">
+      <label for="grade4">Grade</label>
+      <select id="grade4" name="grade4">
+        <option value="">--Select Grade--</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>Fail</option>
+      </select>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+
+</body>
+</html>
